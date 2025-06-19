@@ -85,7 +85,7 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 p-1 sm:p-2">
                   <img
-                    src="/SHARINGAN.PNG?height=200&width=200"
+                    src="/SHARINGAN.png?height=200&width=200"
                     alt="Rovic Deloy"
                     className="w-full h-full rounded-full object-cover"
                   />
