@@ -24,15 +24,15 @@ const Contact = () => {
       label: "Phone",
       value: "+985 056 0325",
       href: "tel:+9850560325",
-      description: "Call me for urgent matters",
+      description: "Call me, if you want",
       gradient: "from-green-500 to-emerald-500",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Isidro, Cainta",
-      href: "https://maps.google.com",
-      description: "Available for local meetings",
+      value: "Bilibiran, Binangonan Rizal",
+      href: "https://maps.app.goo.gl/DtDNexqWBbQBuSwc9",
+      description: "Available for physical meetings",
       gradient: "from-purple-500 to-pink-500",
     },
     {
@@ -77,7 +77,7 @@ const Contact = () => {
 
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4 sm:px-0">
             I'm always interested in hearing about new projects and opportunities. Feel free to reach out through any of
-            the channels below.
+            the contact info below.
           </p>
         </motion.div>
 
@@ -123,10 +123,10 @@ const Contact = () => {
           <div className="card-glass p-4 sm:p-6 text-center">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="font-semibold text-gray-900 dark:text-white text-lg">Currently Available</span>
+              <span className="font-semibold text-gray-900 dark:text-white text-lg">Currently Unavailable</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-4">
-              I'm accepting new projects for Q2 2024. Typical response time is within 24 hours.
+              I'm accepting new projects for Q2 2025. Typical response time is within 24 hours.
             </p>
             <div className="flex items-center justify-center space-x-2 text-gray-500 dark:text-gray-400 text-sm">
               <Clock size={16} />

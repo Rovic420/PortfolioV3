@@ -215,22 +215,22 @@ const Skills = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "AWS Certified",
-                subtitle: "Solutions Architect",
-                icon: "🏆",
-                gradient: "from-orange-500 to-red-500",
-              },
-              {
-                title: "Google Cloud",
-                subtitle: "Professional Developer",
-                icon: "☁️",
+                title: "CISCO Certified",
+                subtitle: "Network Professional",
+                icon: "🌐",
                 gradient: "from-blue-500 to-cyan-500",
               },
               {
-                title: "Meta Certified",
-                subtitle: "React Developer",
-                icon: "⚛️",
-                gradient: "from-blue-600 to-purple-600",
+                title: "Canva Certified",
+                subtitle: "Design Professional",
+                icon: "🎨",
+                gradient: "from-purple-500 to-pink-500",
+              },
+              {
+                title: "Fortinet Certified",
+                subtitle: "Security Expert",
+                icon: "🔒",
+                gradient: "from-red-500 to-orange-500",
               },
             ].map((cert, index) => (
               <motion.div

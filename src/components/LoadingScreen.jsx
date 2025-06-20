@@ -31,7 +31,7 @@ const LoadingScreen = () => {
           transition={{ delay: 0.2 }}
           className="text-4xl font-bold text-white mb-4"
         >
-          Rovic Deloy
+          RVD
         </motion.h1>
 
         <motion.p
@@ -40,7 +40,7 @@ const LoadingScreen = () => {
           transition={{ delay: 0.4 }}
           className="text-white/80 text-lg"
         >
-          Crafting Digital Experiences
+          I create something amazing, please wait!
         </motion.p>
 
         <motion.div

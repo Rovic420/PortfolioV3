@@ -44,39 +44,6 @@ const Experience = () => {
       technologies: ["Vue.js", "Express.js", "MongoDB", "Redis", "Socket.io"],
       gradient: "from-green-500 to-blue-500",
     },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      location: "New York, NY",
-      period: "2019 - 2020",
-      type: "Full-time",
-      description:
-        "Created responsive web applications and collaborated with designers to implement pixel-perfect UIs.",
-      achievements: [
-        "Delivered 20+ client projects on time",
-        "Improved mobile responsiveness across all projects",
-        "Mentored 2 junior developers",
-        "Established coding standards and best practices",
-      ],
-      technologies: ["React", "Sass", "JavaScript", "Webpack", "Git"],
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      title: "Junior Web Developer",
-      company: "WebDev Studio",
-      location: "Boston, MA",
-      period: "2018 - 2019",
-      type: "Full-time",
-      description: "Started my professional journey building websites and learning modern web development practices.",
-      achievements: [
-        "Completed 15+ website projects",
-        "Learned React and modern JavaScript",
-        "Contributed to open-source projects",
-        "Achieved 95% client satisfaction rate",
-      ],
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "PHP"],
-      gradient: "from-orange-500 to-red-500",
-    },
   ]
 
   return (

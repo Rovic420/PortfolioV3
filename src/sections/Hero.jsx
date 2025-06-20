@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail, Download, Play, Sparkles } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Download, Sparkles } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-20 px-3 sm:px-4 lg:px-6"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24 px-4 sm:px-6 lg:px-8"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 -z-10">
@@ -77,7 +77,7 @@ const Hero = () => {
             }}
             className="mb-6 sm:mb-8 md:mb-12 relative"
           >
-            <div className="relative w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto">
+            <div className="relative w-24 h-24 xs:w-28 xs:h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -123,10 +123,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-3 md:mb-4 leading-tight"
+            className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight"
           >
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Rovic Deloy
+              Hi, i'm Rovic
             </span>
           </motion.h1>
 
@@ -135,15 +135,15 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 md:mb-6 h-6 xs:h-8 sm:h-10 md:h-12 lg:h-16"
+            className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8 h-8 xs:h-10 sm:h-12 md:h-16 lg:h-20"
           >
             <TypeAnimation
               sequence={[
-                "Junior Full Stack Developer",
+                "Junior Front-End Developer",
                 2000,
                 "Graphic Designer",
                 2000,
-                "Backend Developer",
+                "Web Developer",
                 2000,
                 "Tech Specialist",
                 2000,
@@ -160,7 +160,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed px-2 sm:px-0"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 lg:px-0"
           >
             I build awesome digital stuff using the latest tech and smooth design. 
             I use React, Node.js, and modern tools to turn your ideas into reality
@@ -171,7 +171,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
-            className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center mb-6 sm:mb-8 md:mb-12 px-2 sm:px-0"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center mb-8 sm:mb-12 md:mb-16 px-2 sm:px-4 lg:px-0"
           >
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
@@ -191,27 +191,17 @@ const Hero = () => {
               </span>
             </motion.button>
 
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="relative overflow-hidden bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 transform hover:shadow-2xl hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+              className="relative overflow-hidden bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 transform hover:shadow-2xl hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50 inline-flex items-center justify-center gap-2 sm:gap-3"
             >
-              <span className="flex items-center justify-center gap-2 sm:gap-3">
-                <Download size={16} className="sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">Download Resume</span>
-              </span>
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative overflow-hidden bg-white/10 dark:bg-white/5 backdrop-blur-md border border-white/20 dark:border-white/10 text-gray-900 dark:text-white hover:bg-white/20 dark:hover:bg-white/10 font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 transform hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-white/50"
-            >
-              <span className="flex items-center justify-center gap-2 sm:gap-3">
-                <Play size={16} className="sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">Watch Demo</span>
-              </span>
-            </motion.button>
+              <Download size={16} className="sm:w-5 sm:h-5" />
+              <span className="text-sm sm:text-base">Download Resume</span>
+            </motion.a>
           </motion.div>
 
           {/* Social Links */}
@@ -228,7 +218,7 @@ const Hero = () => {
                 label: "GitHub",
                 color: "hover:text-gray-900 dark:hover:text-white",
               },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/rovicdeloy2/", label: "LinkedIn", color: "hover:text-blue-600" },
+              { icon: Linkedin, href: "linkedin.com/in/rovicdeloy2", label: "LinkedIn", color: "hover:text-blue-600" },
               { icon: Mail, href: "mailto:Deloy371@pm.me", label: "Email", color: "hover:text-red-500" },
             ].map(({ icon: Icon, href, label, color }) => (
               <motion.a

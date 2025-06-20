@@ -13,7 +13,6 @@ import Contact from "./sections/Contact"
 import Footer from "./components/Footer"
 import LoadingScreen from "./components/LoadingScreen"
 import ScrollProgress from "./components/ScrollProgress"
-import ParticleBackground from "./components/ParticleBackground"
 import ScrollbarManager from "./components/ScrollbarManager"
 
 function App() {
@@ -38,13 +37,12 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark-950 dark:via-dark-900 dark:to-dark-800 text-gray-900 dark:text-gray-100 transition-colors duration-300 relative overflow-hidden"
+            className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark-950 dark:via-dark-900 dark:to-dark-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
           >
             <ScrollbarManager />
-            <ParticleBackground />
             <ScrollProgress />
             <Navbar />
-            <main className="relative z-10">
+            <main>
               <Hero />
               <About />
               <Skills />
